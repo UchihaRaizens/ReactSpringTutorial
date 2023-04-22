@@ -1,19 +1,25 @@
 package com.uchiharaizens.learnreactspringframework.gaming;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
 public class GameRunner {
 	
-	private GamingConsole game;
+	private GamingConsole gamingConsole;
 	
-	public GameRunner(GamingConsole game) {
-		this.game = game;
+	@Autowired
+	public GameRunner(GamingConsole gamingConsole) {
+		this.gamingConsole = gamingConsole;
 	}
 	
 	public void run() {
-		System.out.println("Running game: " + game);
-		game.up();
-		game.down();
-		game.left();
-		game.right();
+		System.out.println("Running game: " + gamingConsole);
+		gamingConsole.up();
+		gamingConsole.down();
+		gamingConsole.left();
+		gamingConsole.right();
 	}
+
 	
 }

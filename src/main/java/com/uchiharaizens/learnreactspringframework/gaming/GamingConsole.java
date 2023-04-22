@@ -1,5 +1,7 @@
 package com.uchiharaizens.learnreactspringframework.gaming;
 
+
+
 public interface GamingConsole {
 
 	void up();

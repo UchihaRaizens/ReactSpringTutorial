@@ -1,6 +1,9 @@
 package com.uchiharaizens.learnreactspringframework.gaming;
 
-public class SuperCobraGame implements GamingConsole{
+import org.springframework.stereotype.Component;
+
+@Component
+public class SuperCobraGame implements GamingConsole {
 
 	
 	public void up() {

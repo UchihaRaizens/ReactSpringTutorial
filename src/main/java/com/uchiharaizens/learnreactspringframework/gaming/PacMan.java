@@ -1,5 +1,10 @@
 package com.uchiharaizens.learnreactspringframework.gaming;
 
+import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Component;
+
+@Component
+@Primary
 public class PacMan implements GamingConsole {
 
 	public void up() {
